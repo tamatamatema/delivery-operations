@@ -133,9 +133,9 @@ cities ─────────┐
 
 ## Файлы
 
-- `00_generate_data.py` — генератор синтетических данных
-- `01_schema.sql` — DDL для PostgreSQL (для справки; SQLite-версия внутри генератора)
-- `02_analysis.sql` — все аналитические запросы
+- `generate_data.py` — генератор синтетических данных
+- `chema.sql` — DDL для PostgreSQL (для справки; SQLite-версия внутри генератора)
+- `analysis.sql` — все аналитические запросы
 - `delivery.db` — готовая SQLite-база (создаётся генератором)
 - `README.md` — этот файл
 
@@ -145,6 +145,6 @@ cities ─────────┐
 # 1. Сгенерировать данные
 python 00_generate_data.py
 
-# 2. Запустить любой запрос из 02_analysis.sql через SQLite или DB Browser for SQLite
-sqlite3 delivery.db < 02_analysis.sql
+# 2. Запустить любой запрос из analysis.sql через SQLite или DB Browser for SQLite
+sqlite3 delivery.db < analysis.sql
 ```
